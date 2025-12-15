@@ -177,7 +177,7 @@ public class ExpenseTracker{
             String[] fromDateValues = fromDate.split("-");
             LocalDate formattedFromDate = LocalDate.of(Integer.parseInt(fromDateValues[0]), Integer.parseInt(fromDateValues[1]), Integer.parseInt(fromDateValues[2]));
 
-            String[] toDateValues = fromDate.split("-");
+            String[] toDateValues = toDate.split("-");
             LocalDate formattedToDate = LocalDate.of(Integer.parseInt(toDateValues[0]), Integer.parseInt(toDateValues[1]), Integer.parseInt(toDateValues[2]));
             
             System.out.println("\nExpense list: "+fromDate + "-" + toDate );
