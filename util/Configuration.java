@@ -2,9 +2,14 @@ package util;
 
 import java.io.File;
 
+import constants.ExpenseTrackerConst;
+
 public class Configuration {
     public Configuration() {
-        File f = new File("//home//saugat//Desktop//JAVA//ExpenseTracker//expensetracker.csv");
+
+        String fileLocation = ExpenseTrackerConst.FILE_LOCATION;
+
+        File f = new File(fileLocation);
         try {
             if (f.createNewFile()) {
                 System.out.println("File Created.");
